@@ -5,8 +5,8 @@ class Portfolio < ApplicationRecord
  
   has_one :profile
   has_one :about
-  has_one :additional_information
- 
+  
+  has_many :additional_informations
   has_many :blocks
   has_many :portfolio_tags
   has_many :tags, through: :portfolio_tags
