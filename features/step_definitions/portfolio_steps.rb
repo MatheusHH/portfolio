@@ -13,11 +13,6 @@ Então "os {int} portfólios são listados" do |count|
 end
  
  
-Então "nenhum portfólio é listado" do
-  expect(page).to have_css(".portfolio", count: 0)
-end
- 
- 
 Então "volta para a página de login" do
   expect(page).to have_current_path("/users/sign_in")
 end
