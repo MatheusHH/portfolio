@@ -4,9 +4,21 @@ class PortfolioPolicy < ApplicationPolicy
   end
  
  
+  def create?
+    record.user == user
+  end
+ 
+ 
+  def edit?
+    record.user == user
+  end
+ 
+ 
+  private
+ 
   class Scope < Scope
     def resolve
-      user.portfolios
+      @user.portfolios
     end
   end
 end
