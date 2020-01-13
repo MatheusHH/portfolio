@@ -12,6 +12,14 @@ class PortfolioPolicy < ApplicationPolicy
   def edit?
     record.user == user
   end
+
+  def show?
+    true
+  end
+
+  def update?
+    record.user == user
+  end
  
  
   private
