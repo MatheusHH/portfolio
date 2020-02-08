@@ -6,6 +6,7 @@ Rails.application.routes.draw do
     resources :tags, only: [:create, :destroy], param: :tag_id, controller: :portfolio_tags
     resources :blocks, only: [:index, :create, :destroy]
     resources :profiles, only: [:index, :update]
+    resources :experiences, only: [:index, :create, :destroy]
   end
  
   resources :tags, only: :index
