@@ -10,6 +10,7 @@ Rails.application.routes.draw do
     resources :educations, only: [:index, :create, :destroy]
     resources :skills, only: [:index, :create, :destroy]
     resources :hobbies, only: [:index, :create, :destroy]
+    resources :languages, only: [:index, :create, :destroy]
   end
  
   resources :tags, only: :index
