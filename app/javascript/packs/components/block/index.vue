@@ -61,13 +61,15 @@
   import Hobby from '../portfolio_resources/hobby'
   import Language from '../portfolio_resources/language'
   import Skill from '../portfolio_resources/skill'
-  import Social from '../portfolio_resources/social'  
+  import Social from '../portfolio_resources/social'
+  import ContactForm from '../portfolio_resources/contact_form'  
  
   export default {
       components: {
         Profile,
         Education,
         'additional_information': AdditionalInformation,
+        'contact_form': ContactForm,
         About,
         Contact,
         Experience,
@@ -97,7 +99,8 @@
           skill: "Habilidade",
           hobby: "Hobby",
           language: "Linguagem",
-          additional_information: "Informações Adicionais"
+          additional_information: "Informações Adicionais",
+          contact_form: "Formulário de contato"
         }
       }
     },
