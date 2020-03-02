@@ -44,7 +44,7 @@ export default {
       social: { },
       socials: [],
       socialKinds: {
-      	facebook: "Facebook",
+        facebook: "Facebook",
         twitter: "Twitter",
         linkedin: "LinkedIn",
         github: "Github",
