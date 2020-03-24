@@ -5,6 +5,17 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+languages = [
+              'ruby', 'ruby on rails', 'python', 'django', 'javascript', 'vuejs',
+              'react', 'angular', 'ionic', 'react native', 'java', 'c', 'c++', 'c#',
+              'elixir', 'phoenix', 'html', 'css', 'bootstrap', 'materialize', 'swift',
+              'kotlin', 'machine learning', 'fortran', 'r', 'go', 'php', 'laravel', 'sql',
+              'mongodob', 'postgres', 'mysql', 'lua', 'lisp', 'perl'
+            ]
+ 
+languages.each do |language|
+  Tag.create(title: language)
+end
 
 User.create(email: 'example@onebitcode.com', password: '123456', password_confirmation: '123456')
 Portfolio.create(user: User.last, slug: 'leoscorza')
